@@ -308,7 +308,9 @@ function createHandshake ({ dh, hash, cipher, symmetricState, cipherState }) {
     seedKeygen,
     createHandshake,
     SKLEN: dh.SKLEN,
-    PKLEN: dh.PKLEN
+    PKLEN: dh.PKLEN,
+    generateSeedKeypair: dh.generateSeedKeypair,
+    generateKeypair: dh.generateKeypair
   })
 }
 

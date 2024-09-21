@@ -77,6 +77,19 @@ All one-way and fundamental handshake patterns are currently supported:
 - `XX`
 - `IX`
 
+### `noise.generateSeedKeypair(pk, sk, seed)`
+Generates a new seed keypair.
+
+* `pk` must be a Buffer of length noise.PKLEN bytes.
+* `sk` must be a Buffer of length noise.SKLEN bytes.
+* `seed` must be a Buffer of length noise.SKLEN bytes.
+
+### `noise.generateKeypair(pk, sk)`
+Generates a new keypair.
+
+* `pk` must be a Buffer of length noise.PKLEN bytes.
+* `sk` must be a Buffer of length noise.SKLEN bytes.
+
 ### `var handshakeState = noise.initialize(handshakePattern, initiator, prologue, [staticKeys], [ephemeralKeys], [remoteStaticKey], [remoteEphemeralKey])`
 
 Create a new Noise handshake instance with:
